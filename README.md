@@ -2,6 +2,8 @@
 ###Team member: Winfred Allotey
 It's a system that utilizes sensors to swap between webpages appropriately for its consumption, which, each show you different information about the solar panels it's connected to.
 
+Full documentation about the project here: http://munro.humber.ca/~bnns0231/ceng355/
+
 ##page1.php
 
 Updates the database. Shows energy and power of the first of Humber's photovoltaic system or solar PV system. Constantly switches between page2.php and page1.php, swapping to page1b.php if the sensor picks up a reading under 25cm.
