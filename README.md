@@ -1,4 +1,5 @@
 # Solar Panel Interactive Box
+###Team member: Winfred Allotey
 It's a system that utilizes sensors to swap between webpages appropriately for its consumption, which, each show you different information about the solar panels it's connected to.
 
 ##page1.php
@@ -16,3 +17,9 @@ Updates the database. Shows the system profiles for the PV systems 1 and 4, alon
 ##page2b.php
 
 Updates the database. Shows the monthly report for Humber's 4th PV system. Alternates between refreshing and swapping back to page2.php if sensor reading is above 25cm.
+
+##part2.c
+
+This is a massive piece of C code that keeps the motion sensor permanently active, as well as starts up the PHP script initially. Every time the sensor detects something within 25cm, it will begin timing how long that object was there under 25cm (we thought about adding this to the DB).
+
+Credits: Winfred for PHP and all of the database work.
