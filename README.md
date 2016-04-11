@@ -2,7 +2,7 @@
 ###Team member: Winfred Allotey
 It's a system that utilizes sensors to swap between webpages appropriately for its consumption, which, each show you different information about the solar panels it's connected to.
 
-Full documentation about the project here: http://munro.humber.ca/~bnns0231/ceng355/
+Full documentation about the project here: http://munro.humber.ca/~bnns0231/ceng355/, which links back to this page in the instructions themselves to reference the code. In the files, there may be a lot of commented-out code which is testing for optimization purposes.
 
 ##page1.php
 
