@@ -1,9 +1,11 @@
-// Test code for the Interactive Box
-//
+// Name: Seenan Bunni
+// Part2.c
+// 
 // It will take a ranging from the module and print results
 // to the screen. From those results, it will determine if anything is close 
 // enough to display 1 of 2 browser pages.
 //
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -71,15 +73,16 @@ int main(int argc, char **argv)
 	openBrowser();
         //browserp = popen("sensible-browser http://munro.humber.ca/~bnns0231/ceng355/sample.html > /dev/null 2>&1", "r");
 	//browserp = popen("sensible-browser http://munro.humber.ca/~bnns0231/iBoxProj/page1.php > /dev/null 2>&1", "r");
-	//fclose(browserp);
+// Lines 78-127 acquired from http://www.robot-electronics.co.uk/files/rpi_srf02.c  made by James Henderson, and slightly modified
 
 	int fd;			// File descriptor
 
 	char *fileName = "/dev/i2c-1";	
 	// Name of the port we will be using
+	// Modified to work with the Raspberry Pi 2 and SRF10 sensor
 
 	int  address = 0x70;	// Address of the SRF02 shifted right one bit
-
+	
 	unsigned char buf[10];	
 	// Buffer for data being read/ written on the i2c bus
 
@@ -95,7 +98,7 @@ int main(int argc, char **argv)
 		}
 
 		buf[0] = 0;													// Commands for performing a ranging
-		buf[1] = 81;
+		buf[1] = 81; 
 
 		if ((write(fd, buf, 2)) != 2) {								// Write commands to the i2c port
 			printf("Error writing to i2c slave\n");
