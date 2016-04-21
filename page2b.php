@@ -52,8 +52,7 @@ if ($dist <= 25) {
 
 } else  {
 
-	//header("Refresh: 4; url= http://munro.humber.ca/~bnns0231/iBoxProj/page2.php");
-	//header("Refresh: 4; url= http://10.111.102.131/page2.php");
+
 
 	header("Refresh: 5; url= http://$localIP/page2.php");
 }
