@@ -24,4 +24,4 @@ Updates the database. Shows the monthly report for Humber's 4th PV system. Alter
 
 This is a massive piece of C code that keeps the motion sensor permanently active, as well as starts up the PHP script initially. Every time the sensor detects something within 25cm, it will begin timing how long that object was there under 25cm (we thought about adding this to the DB).
 
-Credits: Winfred for PHP and all of the database work.
+Credits: Winfred for some assistance on code segments and technical writing.
